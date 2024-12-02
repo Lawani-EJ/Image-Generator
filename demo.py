@@ -13,7 +13,7 @@ response = requests.get(url)
 with open("G_trained.pth", "wb") as f:
     f.write(response.content)
 
-
+# This defines the size of the latent vector, which is the input to the generator. 
 latent_vector_size = 128
 
 
