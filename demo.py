@@ -49,11 +49,11 @@ G.load_state_dict(torch.load("G_trained.pth", map_location=device))
 def make_image(a, b, value):
     try:
         z = a * torch.randn(1, latent_vector_size, 1, 1) + b
-        print(f"Latent vector shape: {z.shape}")  # Debugging
+        print(f"Latent vector shape: {z.shape}")  #Was Just Debugging
 
 
         Xhat = G(z)[0].detach().squeeze(0)
-        print(f"Generated image shape: {Xhat.shape}")  # Debugging
+        print(f"Generated image shape: {Xhat.shape}")  #Was Just Debugging
 
 
         Xhat = (Xhat - Xhat.min()) / (Xhat.max() - Xhat.min())
