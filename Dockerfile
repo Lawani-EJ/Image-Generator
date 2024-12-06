@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python
 # This will specify the base image to use for the docker image
 WORKDIR /app
 # This sets the working directory for subsequent commands in the DockerFile
