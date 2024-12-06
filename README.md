@@ -12,7 +12,7 @@
 ### Screen Shot Output
 ![Screenshot](./assets/Gradio%20-%20Opera%2011_28_2024%201_52_31%20PM.png) -->
 
-## Setting up the demo application 
+<!-- ## Setting up the demo application 
 This creates a Gradio interface using the gr.Interface class. It specifies the make_image function as the main function, defines the input sliders and their ranges, sets the title and CSS styling, and specifies the output as an image with the specified width and height. Finally, the .launch() method is called to launch the Gradio interface.
 
 Creating the application The code sets up a Gradio interface for creating anime characters using a pre-trained model. Here is a brief explanation of each step
@@ -137,5 +137,70 @@ css = ".output_image {height: 60rem !important; width: 100% !important;}"
 3. **Gradio Interface**:
    - Users adjust sliders to control `Variation`, `Bias`, and `Fine Tune`.
    - The app generates and displays anime-style character images.
+
+--- -->
+
+---
+
+# Creating Dockerfile to Deploying the Application
+
+This project uses a `Dockerfile` to containerize a Python application.
+
+<!-- ## Steps to Use
+
+1. **Clone the Repository**  
+   Ensure all necessary files (`Dockerfile`, `requirements.txt`, and `demo.py`) are in the same directory.
+
+2. **Build the Docker Image**  
+   Run this command to build the Docker image:  
+   ```bash
+   docker build -t python-app .
+   ```
+
+3. **Run the Docker Container**  
+   Use this command to start the container:  
+   ```bash
+   docker run -it --rm python-app
+   ```
+
+--- -->
+
+## How It Works
+
+- The `Dockerfile` does the following:
+  1. Uses a Python base image.
+  2. Sets `/app` as the working directory.
+  3. Copies `requirements.txt` and installs dependencies.
+  4. Copies all application files into the image.
+  5. Runs `demo.py` when the container starts.
+
+---
+
+## Requirements
+
+- Docker installed on your system.
+- A `requirements.txt` file with dependencies.
+- A `demo.py` script as the application entry point.
+
+---
+
+## Example Command to Install Dependencies
+
+If you want to test locally, you can install the dependencies:  
+```bash
+pip install -r requirements.txt
+```
+
+--- 
+
+Let me know if you’d like any further tweaks!
+
+## Helpful Resources
+
+Here are two YouTube videos that helped me understand this concept better:
+1. [How to install Docker on Windows - 2024 [ step by step guide ]
+](https://youtu.be/ZyBBv1JmnWQ?si=wcev611qDbaikzh1) - *This is a step by step guide , covering how to setup and enable wsl2 and then install docker.*
+
+2. [How to “Dockerize” Your Python Applications | How To Build And Run A Python App In Docker Container](https://youtu.be/KUECJHlV1LE?si=FqdNpmF-3XuAGeEM) - *Docker is an open-source platform that makes it easy to build, ship, and run distributed applications.*
 
 ---
