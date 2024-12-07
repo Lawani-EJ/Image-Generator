@@ -1,4 +1,4 @@
-<!-- ## First commit in setting up the enviroment and installing gradio
+ ## First commit in setting up the enviroment and installing gradio
 1. mkdir on cmd called AnimeCharImg-Gnrtr
 2. Create the virtual environment and activate the virutal environment
 3. Install the required packages pip install --upgrade gradio
@@ -10,9 +10,9 @@
 ![Screenrecording](./assets/Gradio-Opera2024-11-2813-52-05-ezgif.com-video-to-gif-converter.gif)
 
 ### Screen Shot Output
-![Screenshot](./assets/Gradio%20-%20Opera%2011_28_2024%201_52_31%20PM.png) -->
+![Screenshot](./assets/Gradio%20-%20Opera%2011_28_2024%201_52_31%20PM.png) 
 
-<!-- ## Setting up the demo application 
+## Setting up the demo application 
 This creates a Gradio interface using the gr.Interface class. It specifies the make_image function as the main function, defines the input sliders and their ranges, sets the title and CSS styling, and specifies the output as an image with the specified width and height. Finally, the .launch() method is called to launch the Gradio interface.
 
 Creating the application The code sets up a Gradio interface for creating anime characters using a pre-trained model. Here is a brief explanation of each step
@@ -136,17 +136,13 @@ css = ".output_image {height: 60rem !important; width: 100% !important;}"
    - The image is normalized and converted to a high-quality PIL image.
 3. **Gradio Interface**:
    - Users adjust sliders to control `Variation`, `Bias`, and `Fine Tune`.
-   - The app generates and displays anime-style character images.
 
---- -->
-
----
 
 # Creating Dockerfile to Deploying the Application
 
 This project uses a `Dockerfile` to containerize a Python application.
 
-<!-- ## Steps to Use
+## Steps to Use
 
 1. **Clone the Repository**  
    Ensure all necessary files (`Dockerfile`, `requirements.txt`, and `demo.py`) are in the same directory.
@@ -163,7 +159,7 @@ This project uses a `Dockerfile` to containerize a Python application.
    docker run -it --rm python-app
    ```
 
---- -->
+--- 
 
 ## How It Works
 
