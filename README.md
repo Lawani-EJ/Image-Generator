@@ -198,5 +198,3 @@ Here are two YouTube videos that helped me understand this concept better:
 ](https://youtu.be/ZyBBv1JmnWQ?si=wcev611qDbaikzh1) - *This is a step by step guide , covering how to setup and enable wsl2 and then install docker.*
 
 2. [How to “Dockerize” Your Python Applications | How To Build And Run A Python App In Docker Container](https://youtu.be/KUECJHlV1LE?si=FqdNpmF-3XuAGeEM) - *Docker is an open-source platform that makes it easy to build, ship, and run distributed applications.*
-
----
