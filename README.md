@@ -188,9 +188,6 @@ pip install -r requirements.txt
 ```
 
 --- 
-
-Let me know if you’d like any further tweaks!
-
 ## Helpful Resources
 
 Here are two YouTube videos that helped me understand this concept better:
